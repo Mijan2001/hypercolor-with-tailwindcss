@@ -14,29 +14,269 @@
             referrerpolicy="no-referrer"
         />
 
+        <style>
+            .text-gradient {
+                background: linear-gradient(
+                    to right,
+                    #b90642,
+                    #d35005
+                ); /* Customize gradient colors */
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        </style>
         <!-- css file added here  -->
         <link rel="stylesheet" href="./output.css" />
     </head>
     <body>
         <!-- nav section starts  -->
-        <nav class="flex flex-row justify-between mx-14 my-5">
-            <div class="">
-                <ul class="flex flex-row gap-6 text-white font-medium">
-                    <li
-                        class="active:border-2 focus:border-fuchsia-700 active:border-fuchsia-700 active:p-1 no-animation active:no-animation"
-                    >
-                        <a href="">Gradients</a>
-                    </li>
-                    <li><a href="">Generator</a></li>
-                    <li><a href="">Mesh</a></li>
-                    <li><a href="">Grainy</a></li>
-                    <li><a href="">Flags</a></li>
-                </ul>
+        <nav class="fixed w-full z-50 bg-base-100 mb-1">
+            <div class="flex flex-row justify-between mx-14 my-5">
+                <div class="">
+                    <ul class="flex flex-row gap-6 text-white font-medium">
+                        <li
+                            class="btn btn-ghost hover:bg-base-100 active:btn-outline active:bg-base-100 active:border-1 active:border-t-orange-900 no-animation"
+                        >
+                            <a href="">Gradients</a>
+                        </li>
+                        <li
+                            class="btn btn-ghost hover:bg-base-100 active:btn-outline active:bg-base-100 active:border-1 active:border-t-orange-900 no-animation"
+                        >
+                            <a href="">Generator</a>
+                        </li>
+                        <li
+                            class="btn btn-ghost hover:bg-base-100 active:btn-outline active:bg-base-100 active:border-1 active:border-t-orange-900 no-animation"
+                        >
+                            <a href="">Mesh</a>
+                        </li>
+                        <li
+                            class="btn btn-ghost hover:bg-base-100 active:btn-outline active:bg-base-100 active:border-1 active:border-t-orange-900 no-animation"
+                        >
+                            <a href="">Grainy</a>
+                        </li>
+                        <li
+                            class="btn btn-ghost hover:bg-base-100 active:btn-outline active:bg-base-100 active:border-1 active:border-t-orange-900 no-animation"
+                        >
+                            <a href="">Flags</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn bg-base-100">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </div>
             </div>
-            <div class="">
-                <i class="fa-brands fa-github text-xl"></i>
-            </div>
+            <!-- horizonal line  -->
+            <hr class="border-t-1 border-gray-700 mt-6 mb-2" />
+            <!-- nav section ends  -->
         </nav>
+
+        <!-- header section start  -->
+        <p class="pt-32"></p>
+        <div class="my-5 h-[100vh]">
+            <div class="text-center">
+                <h5 class="text-lg text-gradient font-semibold">
+                    Gradient Generator for Tailwind CSS
+                </h5>
+                <h1 class="text-8xl font-bold px-96 text-gradient">
+                    Gradient Generator
+                </h1>
+                <p class="text-white font-semibold px-[350px] text-xl mt-6">
+                    Create your own Tailwind CSS gradient with the full Tailwind
+                    CSS color library and the extended radial and conic gradient
+                    options provided through Hypercolor.
+                </p>
+            </div>
+        </div>
+        <!-- header section edn  -->
+
+        <!-- horizonal line  -->
+        <hr class="border-t-1 border-gray-700 mt-6 mb-3" />
         <!-- nav section ends  -->
+        <!-- bar section starts  -->
+        <div class="mx-14">
+            <div class="flex justify-between">
+                <div class="flex justify-center gap-x-4">
+                    <a
+                        class="rounded-xl bg-base-200 p-2 active:border-2 active:border-red-500"
+                        href=""
+                        ><img
+                            class="w-5 h-5"
+                            src="./icons/tailwind-css-2.svg"
+                            alt=""
+                    /></a>
+                    <a
+                        class="rounded-xl bg-base-200 p-2 active:border-2 active:border-red-500"
+                        href=""
+                        ><i class="fa-solid fa-code"></i
+                    ></a>
+                    <a
+                        class="rounded-xl bg-base-200 p-2 active:border-2 active:border-red-500"
+                        href=""
+                        ><i class="fa-solid fa-image"></i
+                    ></a>
+                    <a
+                        class="rounded-xl bg-base-200 p-2 active:border-2 active:border-red-500"
+                        href=""
+                    >
+                        <img
+                            class="w-5 h-5 bg-white"
+                            src="./icons/double-arrow.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
+
+                <div class="flex justify-center gap-x-6">
+                    <div>
+                        <select
+                            class="select select-bordered pr-16 max-w-xs bg-gray-900"
+                        >
+                            <option selected>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select
+                            class="select select-bordered pr-16 max-w-xs bg-gray-900"
+                        >
+                            <option selected>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select
+                            class="select select-bordered pr-16 max-w-xs bg-gray-900"
+                        >
+                            <option selected>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select
+                            class="select select-bordered pr-16 max-w-xs bg-gray-900"
+                        >
+                            <option selected>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bar sections ends  -->
+        <!-- horizonal line  -->
+        <hr class="border-t-1 border-gray-700 mt-3 mb-2" />
+        <!-- nav section ends  -->
+
+        <!-- body section starts  -->
+        <main class="mx-14 my-6">
+            <div class="flex justify-between gap-x-6">
+                <div
+                    class="w-full h-96 rounded-lg bg-gradient-to-b from-gray-200 to-green-600 p-8 text-white"
+                ></div>
+                <div
+                    class="w-full h-96 rounded-lg bg-gradient-to-b from-white to-gray-300 p-8 text-purple-200 text-xl text-center my-auto"
+                >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum molestiae quis ab numquam. Voluptas aut repudiandae
+                    sint praesentium excepturi, nobis magni possimus! Qui nam
+                    ipsa sapiente quia placeat illo asperiores tenetur quam,
+                    ullam necessitatibus nostrum nulla aliquam ad beatae harum
+                    inventore amet praesentium rem reprehenderit. Illo debitis
+                    magnam velit quod!
+                </div>
+            </div>
+        </main>
+        <!-- body sections ends  -->
+
+        <!-- footer section starts  -->
+        <div class="mt-6 bg-base-100 py-6">
+            <footer
+                class="footer footer-center bg-base-100 text-base-content p-4"
+            >
+                <aside>
+                    <p>
+                        Copyright © {new Date().getFullYear()} - All right
+                        reserved by ACME Industries Ltd
+                    </p>
+                </aside>
+            </footer>
+        </div>
+        <!-- footer section ends  -->
     </body>
 </html>
