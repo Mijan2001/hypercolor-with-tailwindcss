@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hypercolor With Tailwindcss</title>
+
+        <!-- fontawesome cdn link -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <style>
+            .text-gradient {
+                background: linear-gradient(
+                    to right,
+                    #b90642,
+                    #d35005
+                ); /* Customize gradient colors */
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        </style>
+        <!-- css file added here  -->
+        <link rel="stylesheet" href="./output.css" />
+    </head>
+    <body>
+        <!-- nav section starts  -->
+        <nav class="fixed w-full z-50 bg-base-100 mb-1">
+            <div class="flex flex-row justify-between mx-14 my-5">
+                <div class="">
+                    <ul class="flex flex-row gap-6 text-white font-medium">
+                        <li
+                            class="btn btn-ghost hover:bg-base-100 active:btn-outline active:bg-base-100 active:border-1 active:border-t-orange-900 no-animation"
+                        >
+                            <a href="./index.html">Gradients</a>
+                        </li>
+                        <li
+                            class="btn btn-ghost hover:bg-base-100 active:btn-outline active:bg-base-100 active:border-1 active:border-t-orange-900 no-animation"
+                        >
+                            <a href="./generator.html">Generator</a>
+                        </li>
+                        <li
+                            class="btn btn-ghost hover:bg-base-100 active:btn-outline active:bg-base-100 active:border-1 active:border-t-orange-900 no-animation"
+                        >
+                            <a href="">Mesh</a>
+                        </li>
+                        <li
+                            class="btn btn-ghost hover:bg-base-100 active:btn-outline active:bg-base-100 active:border-1 active:border-t-orange-900 no-animation"
+                        >
+                            <a href="">Grainy</a>
+                        </li>
+                        <li
+                            class="btn btn-ghost hover:bg-base-100 active:btn-outline active:bg-base-100 active:border-1 active:border-t-orange-900 no-animation"
+                        >
+                            <a href="">Flags</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn bg-base-100">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </div>
+            </div>
+            <!-- horizonal line  -->
+            <hr class="border-t-1 border-gray-700 mt-6 mb-2" />
+            <!-- nav section ends  -->
+        </nav>
+
+        <!-- header section start  -->
+        <p class="pt-32"></p>
+        <div class="my-5 h-[100vh]">
+            <div class="text-center">
+                <h5 class="text-lg text-gradient font-semibold">
+                    Gradient Generator for Tailwind CSS
+                </h5>
+                <h1 class="text-8xl font-bold px-96 text-gradient">
+                    Gradient Generator
+                </h1>
+                <p class="text-white font-semibold px-[350px] text-xl mt-6">
+                    Create your own Tailwind CSS gradient with the full Tailwind
+                    CSS color library and the extended radial and conic gradient
+                    options provided through Hypercolor.
+                </p>
+            </div>
+        </div>
+        <!-- header section edn  -->
+        <div class="mx-14">
+            <div class="flex justify-between">
+                <div class="flex justify-center gap-x-4">
+                    <a
+                        class="rounded-xl bg-base-200 p-2 active:border-2 active:border-red-500"
+                        href=""
+                        ><img
+                            class="w-5 h-5"
+                            src="./icons/tailwind-css-2.svg"
+                            alt=""
+                    /></a>
+                    <a
+                        class="rounded-xl bg-base-200 p-2 active:border-2 active:border-red-500"
+                        href=""
+                        ><i class="fa-solid fa-code"></i
+                    ></a>
+                    <a
+                        class="rounded-xl bg-base-200 p-2 active:border-2 active:border-red-500"
+                        href=""
+                        ><i class="fa-solid fa-image"></i
+                    ></a>
+                    <a
+                        class="rounded-xl bg-base-200 p-2 active:border-2 active:border-red-500"
+                        href=""
+                    >
+                        <img
+                            class="w-5 h-5 bg-white"
+                            src="./icons/double-arrow.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
+
+                <div class="flex justify-center gap-x-6">
+                    <div>
+                        <select
+                            class="select select-bordered pr-16 max-w-xs bg-gray-900"
+                        >
+                            <option selected>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select
+                            class="select select-bordered pr-16 max-w-xs bg-gray-900"
+                        >
+                            <option selected>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select
+                            class="select select-bordered pr-16 max-w-xs bg-gray-900"
+                        >
+                            <option selected>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select
+                            class="select select-bordered pr-16 max-w-xs bg-gray-900"
+                        >
+                            <option selected>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                            <option>Who shot first?</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
